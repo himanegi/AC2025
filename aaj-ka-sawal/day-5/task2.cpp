@@ -29,5 +29,28 @@ int convertFive(int n)
     return stoi(s);
 }
 
-// Time Comlexity : O(n)
+// Time Complexity : O(n)
 // Space Complexity : O(n)
+
+// Method 2 : Space Complexity : O(1)
+
+int convertFive(int n)
+{
+    // Your code here
+    int k = n, num = 0;
+    while (k)
+    {
+        if (k % 10 == 0)
+            num = num * 10 + 5;
+        else
+            num = num * 10 + k % 10;
+        k /= 10;
+    }
+    int rev = 0;
+    while (num)
+    {
+        rev = rev * 10 + num % 10;
+        num /= 10;
+    }
+    return rev;
+}
