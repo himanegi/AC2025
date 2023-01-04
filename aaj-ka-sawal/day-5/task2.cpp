@@ -1,3 +1,4 @@
+// Link:https://practice.geeksforgeeks.org/problems/replace-all-0s-with-5/1
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
@@ -27,3 +28,6 @@ int convertFive(int n)
             s[i] = '5';
     return stoi(s);
 }
+
+// Time Comlexity : O(n)
+// Space Complexity : O(n)
