@@ -29,7 +29,7 @@ int convertFive(int n)
     return stoi(s);
 }
 
-// Time Complexity : O(n)
+// Time Complexity : O(logN)
 // Space Complexity : O(n)
 
 // Method 2 : Space Complexity : O(1)
