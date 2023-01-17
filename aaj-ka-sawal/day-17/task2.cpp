@@ -11,8 +11,7 @@ public:
     int findPeakElement(vector<int> &a)
     {
         // Code here.
-        int high = a.size() - 1, low = 0;
-        int mid = low + (high - low) / 2;
+        int high = a.size() - 1, low = 0, mid;
         while (low <= high)
         {
             mid = low + (high - low) / 2;
